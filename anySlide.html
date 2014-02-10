@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>焦点图左右滚动带数字按钮_每屏个数时间自定义</title>
+<style type="text/css">
+body{color:#333;font:14px/1.6 arial vardana;}
+h1,h2,h3{font:16px/2 Microsoft Yahei;color:#fff;padding-left:10px;}
+h1{background:#5BBD2B;}
+h2{background:#c2c2c2;}
+h3{background:#ececec;color:#333;}
+</style>
+
+<style type="text/css">
+*{ padding: 0;margin: 0;list-style-type: none;border: 0; text-decoration:none;}
+.slide{ width: 600px;margin: 20px auto;position: relative;}
+.slide .prev{ position: absolute;left: -50px;top: 180px;}
+.slide .next{ position: absolute;right: -50px;top: 180px;}
+.slide .slide_con_wrap{ width: 600px;height: 400px;overflow: hidden;position: relative;}
+.slide .slide_con { position: absolute;}
+.slide .slide_con a{ float: left;width:300px;height:200px;}
+.slide .slide_con img{ float: left;width:300px;height:200px;}
+.slide .switcher {position:absolute;left:0;top:0;}
+.slide .switcher .on{color:#f00;}
+#slide .slide_con_wrap a{height:400px;}
+#slide .slide_con_wrap img{height:400px;}
+#slide3 .slide_con_wrap{position:absolute;display:none;top:20px;z-index:999;}
+#slide3 .switcher{position:static;}
+#slide4 .slide_con_wrap a{width:600px;height:400px;}
+#slide4 .slide_con_wrap img{width:600px;height:400px;}
+
+table{border-collapse:collapse;padding:0;}
+td{border:1px solid #ccc;padding:0;height:52px;}
+</style>
+</head>
+
+<body>
+<h1>焦点图左右滚动带数字按钮_每屏个数时间自定义</h1>
+	<h2>常见菜单切换 </h2>
+    <div class="slide" id="slide3">
+        <div class="slide_con_wrap">
+            <div class="slide_con">
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104052071.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104034093.jpg" /></a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104016065.jpg" /></a>
+            <a href="http://www.baidu.com" target="_blank">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_004.jpg" />
+            </a>
+            <a href="http://www.baidu.com" target="_blank">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140115/08/17332933720140115084844016.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_002.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_001.jpg" /></a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104016065.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104000054.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_000.jpg" /></a>
+            </div>
+        </div>
+		<div class="switcher">
+			<span>刘丕水</span>
+			<span>邮箱:</span>
+			<span>liupishui@163.com</span>
+			<span>百度博客:</span>
+			<span><a href="http://hi.baidu.com/zhuifengh2o" target="_blank">为人民服务</a></span>
+		</div>
+    </div>
+	<h2>简单左右切换 </h2>
+    <div class="slide" id="slide4">
+        <div class="slide_con_wrap">
+            <div class="slide_con">
+            <a href="">
+                <img src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104052071.jpg" />
+            </a>
+            <a href="">
+                <img src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104034093.jpg" /></a>
+            <a href="">
+                <img src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104016065.jpg" /></a>
+            <a href="http://www.baidu.com" target="_blank">
+                <img src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_004.jpg" />
+            </a>
+            <a href="http://www.baidu.com" target="_blank">
+                <img src="http://img226.poco.cn/mypoco/myphoto/20140115/08/17332933720140115084844016.jpg" />
+            </a>
+            <a href="">
+                <img src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_002.jpg" />
+            </a>
+            <a href="">
+                <img src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_001.jpg" /></a>
+            <a href="">
+                <img src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104016065.jpg" />
+            </a>
+            <a href="">
+                <img src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104000054.jpg" />
+            </a>
+            <a href="">
+                <img src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_000.jpg" /></a>
+            </div>
+        </div>
+    </div>
+
+<h2>渐隐荐现标题自定义</h2>
+    <div class="slide" id="slide">
+        <div class="slide_con_wrap">
+            <div class="slide_con">
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104052071.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104034093.jpg" /></a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104016065.jpg" /></a>
+            <a href="http://www.baidu.com" target="_blank">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_004.jpg" />
+            </a>
+            <a href="http://www.baidu.com" target="_blank">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140115/08/17332933720140115084844016.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_002.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_001.jpg" /></a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104016065.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104000054.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_000.jpg" /></a>
+            </div>
+        </div>
+		<div class="switcher">
+			<span>刘丕水</span>
+			<span>2010年毕业于</span>
+			<span>山东理工大学</span>
+			<span>百度博客：</span>
+			<span><a href="http://hi.baidu.com/zhuifengh2o" target="_blank">为人民服务</a></span>
+		</div>
+    </div>
+<h2>向上滚动,标题自定义</h2>
+    <div class="slide" id="slide1">
+        <div class="slide_con_wrap">
+            <div class="slide_con">
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104052071.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104034093.jpg" /></a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104016065.jpg" /></a>
+            <a href="http://www.baidu.com" target="_blank">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_004.jpg" />
+            </a>
+            <a href="http://www.baidu.com" target="_blank">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140115/08/17332933720140115084844016.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_002.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_001.jpg" /></a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104016065.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104000054.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_000.jpg" /></a>
+            </div>
+        </div>
+		<div class="switcher">
+			<span>刘丕水</span>
+			<span>2006年</span>
+			<span>毕业于菏泽三中</span>
+		</div>
+    </div>
+	<h2>左右滚动，到达第一个和最后一个增加回调函数 </h2>
+    <div class="slide" id="slide2">
+        <div class="slide_con_wrap">
+            <div class="slide_con">
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104052071.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104034093.jpg" /></a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104016065.jpg" /></a>
+            <a href="http://www.baidu.com" target="_blank">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_004.jpg" />
+            </a>
+            <a href="http://www.baidu.com" target="_blank">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140115/08/17332933720140115084844016.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_002.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_001.jpg" /></a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104016065.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104000054.jpg" />
+            </a>
+            <a href="">
+                <img width="200" height="400" src="http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_000.jpg" /></a>
+            </div>
+        </div>
+    </div>
+
+<pre>
+<div style="clear:both;margin-top:50px;color:#f00;">以上列出了几种简单的效果，此插件能简单写出上百种切换特效,请看下面是说明，根据需要自行组合。</div>
+	<strong>使用方法:</strong>
+	css部分：
+	<pre>
+	*{ padding: 0;margin: 0;list-style-type: none;border: 0; text-decoration:none;}
+.slide{ width: 600px;margin: 100px auto;position: relative;}
+.slide .prev{ position: absolute;left: -50px;top: 180px;}
+.slide .next{ position: absolute;right: -50px;top: 180px;}
+.slide .slide_con_wrap{ width: 600px;height: 400px;overflow: hidden;position: absolute;}
+.slide .slide_con { position: absolute;}
+.slide .slide_con a{ float: left;width:300px;height:200px;}
+.slide .slide_con img{ float: left;width:300px;height:200px;}
+.slide .switcher {position:absolute;left:0;top:0;}
+.slide .switcher .on{color:#f00;}
+
+	</pre>
+
+	html部分：
+    &lt;div class=&quot;slide&quot; id=&quot;slide&quot;&gt;
+        &lt;div class=&quot;slide_con_wrap&quot;&gt;
+            &lt;div class=&quot;slide_con&quot;&gt;
+            &lt;a href=&quot;&quot;&gt;
+                &lt;img width=&quot;200&quot; height=&quot;400&quot; src=&quot;http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104052071.jpg&quot; /&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;&quot;&gt;
+                &lt;img width=&quot;200&quot; height=&quot;400&quot; src=&quot;http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104034093.jpg&quot; /&gt;&lt;/a&gt;
+            &lt;a href=&quot;&quot;&gt;
+                &lt;img width=&quot;200&quot; height=&quot;400&quot; src=&quot;http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104016065.jpg&quot; /&gt;&lt;/a&gt;
+            &lt;a href=&quot;http://www.baidu.com&quot; target=&quot;_blank&quot;&gt;
+                &lt;img width=&quot;200&quot; height=&quot;400&quot; src=&quot;http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_004.jpg&quot; /&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;http://www.baidu.com&quot; target=&quot;_blank&quot;&gt;
+                &lt;img width=&quot;200&quot; height=&quot;400&quot; src=&quot;http://img226.poco.cn/mypoco/myphoto/20140115/08/17332933720140115084844016.jpg&quot; /&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;&quot;&gt;
+                &lt;img width=&quot;200&quot; height=&quot;400&quot; src=&quot;http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_002.jpg&quot; /&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;&quot;&gt;
+                &lt;img width=&quot;200&quot; height=&quot;400&quot; src=&quot;http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_001.jpg&quot; /&gt;&lt;/a&gt;
+            &lt;a href=&quot;&quot;&gt;
+                &lt;img width=&quot;200&quot; height=&quot;400&quot; src=&quot;http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104016065.jpg&quot; /&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;&quot;&gt;
+                &lt;img width=&quot;200&quot; height=&quot;400&quot; src=&quot;http://img226.poco.cn/mypoco/myphoto/20131126/10/17332933720131126104000054.jpg&quot; /&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;&quot;&gt;
+                &lt;img width=&quot;200&quot; height=&quot;400&quot; src=&quot;http://img226.poco.cn/mypoco/myphoto/20140114/13/173329337201401141351533323143072408_000.jpg&quot; /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+		&lt;div class=&quot;switcher&quot;&gt;
+			&lt;span&gt;你好&lt;/span&gt;
+			&lt;span&gt;不好&lt;/span&gt;
+			&lt;span&gt;啊&lt;/span&gt;
+		&lt;/div&gt;
+    &lt;/div&gt;
+
+
+	结构为：
+	&lt;div id="slide"&gt;
+		&lt;div&gt;
+			&lt;div&gt;
+				&lt;li&gt;ddddd&lt;/li&gt;
+				&lt;li&gt;ddddddd&lt;/li&gt;
+				&lt;li&gt;ddddddd&lt;/li&gt;
+				&lt;li&gt;ddddddd&lt;/li&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	js部分：
+	&lt;script src=&quot;http://cdn.staticfile.org/jquery/1.10.2/jquery.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;lpsSlide-1.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        $(function() {
+            $(&quot;#slide&quot;).slideFocus({
+                slideFast: true,
+				autoPlay:true,
+				switchMethod:&quot;mouseenter&quot;,
+                addSwitchBtn: true,
+                addNpBtn: true,
+				fadeIn:400,
+				direction:&quot;up&quot;,
+                offset: 4000,
+				last:600
+            });
+            $(&quot;#slide1&quot;).slideFocus({
+				switchMethod:&quot;mouseenter&quot;,
+				autoPlay:true,
+                addSwitchBtn: true,
+                addNpBtn: true,
+				direction:&quot;up&quot;,
+                smooth: true,
+                offset: 4000,
+                last: 600
+            });
+            $(&quot;#slide2&quot;).slideFocus({
+				direction:&quot;right&quot;,
+                addNpBtn: true,
+				switchMethod:&quot;mouseenter&quot;,
+				addSwitchBtn:true,
+                offset: 2000,
+                last: 600
+            },function(){alert(&quot;已到达最后一页&quot;)},function(){alert(&quot;已到达第一页&quot;)});
+            $(&quot;#slide3&quot;).slideFocus({
+				hover:true,
+				slideFast:true,
+				switchMethod:&quot;mouseenter&quot;
+            });
+        });
+    &lt;/script&gt;
+
+
+        /******sideFous({slideFast,hover,switchMetchod,autoPlay,addSwitchBtn,addNpBtn,fadeIn,Direction,smooth,offset,last})
+		hover:布尔值，控制主题内容的显示隐藏为hover效果，默认没有hover效果；
+		switcherMethod：切换方法，鼠标点击切换(click)，还是鼠标移入切换(mouseenter)；
+        AddSwitchBtn :（数字按钮）为布尔值，false和默认不显示true时显示；addNpBtn（上一个下一个按钮）也是布尔值，默认不显示，true时显示；
+        addNpBtn : 布尔值,下一个上一个按钮；
+        slideFast : 布尔值，是否瞬间切换，默认false（不瞬间切换）,为true（瞬间切换）时，以下设置无效；
+        offset : 为播放时间间隔；
+        last : 为持续时间；
+        smooth : 为布尔值,是否等一个动画结束才开始另一个动画，默认为false(等一个动画不结束就可以开始另一个动画)；
+        direction : 有left,right,up,down四个方向,若为上下滚动则宽度要为可视宽度；
+        fadeIn : 快速切换时，可设置渐显时间，可不设置（瞬间切换）；
+        autoPlay : 是否自动播放幻灯片；
+		
+		自定义数字按钮内容：数字按钮外围样式须为.switcher，此时不会再加数字按钮（AddSwitcherBtn失效）；
+		增加两个回调函数，第一个到达最后一页的回调，第二个到达第一页的回调函数；
+        ******/
+		<table style="width:100%;">
+		<tr>
+			<td>瞬间切换</br>(slideFast:bool)</td>
+			<td>淡入淡出效果</br>(fadeIn:number)</td>
+			<td>方向</br>(derection:left/right/up/down)</td>
+			<td>自动播放</br>(autoPlay:bool)</td>
+			<td>主题内容显示隐藏</br>(hover:bool)</td>
+			<td>添加上一个下一个按钮</br>(addSwitchBtn:bool)</td>
+			<td>添加切换数字按钮</br>(addSwitchBtn:bool)</td>
+			<td>切换事件</br>(switchMethod:mouseenter/click)</td>
+			<td>平滑切换</br>(smooth:bool)</td>
+			<td>自定义数字按钮内容(.switcher)</td>
+			<td>动画间隔时间(offset)</td>
+			<td>动画持续时间(last)</td>
+		</tr>
+		<tr>
+			<td>true</td>
+			<td><table><tr><td>不需要不必设置(或设置为0:即0秒淡入)</td><tr/><tr><td>数字为淡入时间</td><tr/></table></td>
+			<td>可用</td>
+			<td>可用</td>
+			<td>可用</td>
+			<td>可用</td>
+			<td>可用</td>
+			<td>可用</td>
+			<td>无效果</td>
+			<td>可用</td>
+			<td>可用</td>
+			<td>无效果</td>
+		</tr>
+		<tr>
+			<td>false</td>
+			<td>无效果</td>
+			<td>可用</td>
+			<td>可用</td>
+			<td>可用</td>
+			<td>可用</td>
+			<td>可用</td>
+			<td>可用</td>
+			<td>可用</td>
+			<td>可用</td>
+			<td>可用</td>
+			<td>可用</td>
+
+		</tr>
+		</table>
+注：所有布尔值(bool)均为false，使用时想要什么效果设为true，即可；
+有回调函数，可以通过回调事件，判断一定的条件，通过.trigger("mouseenter").unbind("mouseenter").unbind("mouseleave")实现播放到最后一页停止继续播放；通过.unbind("click")可以实现到第一页时取消点击事件，到最后一页时取消点击事件；
+</pre>
+<script src="http://cdn.staticfile.org/jquery/1.10.2/jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="lpsSlide-1.1.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#slide").slideFocus({
+				slideFast:true,
+				autoPlay:true,
+				switchMethod:"mouseenter",
+                addNpBtn: true,
+				fadeIn:400,
+                offset: 2000,
+                last: 600
+            });
+            $("#slide1").slideFocus({
+				switchMethod:"mouseenter",
+				autoPlay:true,
+                addSwitchBtn: true,
+                addNpBtn: true,
+				direction:"up",
+                smooth: true,
+                offset: 2000,
+                last: 600
+            });
+            $("#slide2").slideFocus({
+				direction:"right",
+                addNpBtn: true,
+				switchMethod:"mouseenter",
+				addSwitchBtn:true,
+                offset: 2000,
+                last: 600
+            },function(){alert("已到达最后一页")},function(){alert("已到达第一页")});
+            $("#slide3").slideFocus({
+				hover:true,
+				slideFast:true,
+				switchMethod:"mouseenter"
+            });
+            $("#slide4").slideFocus({
+				addNpBtn:true
+            });
+        });
+    </script>
+</body>
+</html>
